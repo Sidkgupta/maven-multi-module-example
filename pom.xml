@@ -38,8 +38,7 @@
                     <tagNameFormat>@{project.version}</tagNameFormat>
                  </configuration>
                 </plugin>
-               </build>
-               
-              
+           </plugins>
+    </build>             
        
 </project>
