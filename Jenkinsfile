@@ -63,5 +63,8 @@ pipeline{
     }    
     
 }
+        stage('push changes to master'){
+            steps{
+                sh 'git push --all'
     }
 }
