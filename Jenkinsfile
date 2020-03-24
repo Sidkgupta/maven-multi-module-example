@@ -53,7 +53,7 @@ pipeline{
                 branch 'release'
             }
             steps{
-                sh '/usr/share/maven/bin/mvn --batch-mode release:clean release:prepare release:perform -DreleaseVersion=3.0 -Ddevelopmentversion=3.1-SNAPSHOT'
+                sh '/usr/share/maven/bin/mvn --batch-mode release:clean release:prepare release:perform -DreleaseVersion=7.0 -Ddevelopmentversion=7.1-SNAPSHOT'
             }
         }
     }    
