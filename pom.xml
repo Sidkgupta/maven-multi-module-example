@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jamesward</groupId>
     <artifactId>multi</artifactId>
-    <version>7.0</version>
+    <version>7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>multi</name>
     <modules>
@@ -13,7 +13,7 @@
        <connection>scm:https://https://github.com/Sidkgupta/parking_backend.git</connection>
        <url>https://github.com/Sidkgupta/parking_backend.git</url>
        <developerConnection>scm:git:https://github.com/Sidkgupta/parking_backend.git</developerConnection>
-       <tag>7.0</tag>
+       <tag>HEAD</tag>
     </scm>
       <distributionManagement>
           <snapshotRepository>
