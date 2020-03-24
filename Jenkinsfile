@@ -53,9 +53,12 @@ pipeline{
                 branch 'release'
             }
             steps{
-                sh '/usr/share/maven/bin/mvn --batch-mode release:clean release:prepare release:perform'
+        
+        mvn build-helper:parse-version versions:set -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion} versions:commit
             }
-        }
+      }
+        
+        
         
         stage('push changes to master'){
             steps{
