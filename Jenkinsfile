@@ -59,7 +59,11 @@ pipeline{
         
         stage('push changes to master'){
             steps{
-                sh 'git push --all'
+                withCredentials([usernamePassword(credentialsId: 'gitid', passwordVariable: 'Pass', usernameVariable: 'User')]) {
+    
+                     sh 'git push --all'
+}
+               
     }
     }    
     }
