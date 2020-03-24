@@ -68,3 +68,5 @@ pipeline{
                 sh 'git push --all'
     }
 }
+    }
+}
