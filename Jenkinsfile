@@ -13,7 +13,7 @@ pipeline{
                 sh '/usr/share/maven/bin/mvn clean package -Dmaven.test.skip=true'
             }
         }
-    stage('Kindly Provide Approval for UAT Deployment'){
+    stage('Kindly Provide Approval for Deployment'){
 
        steps{
 
@@ -53,7 +53,7 @@ pipeline{
                 branch 'release'
             }
             steps{
-                sh '/usr/share/maven/bin/mvn --batch-mode release:clean release:prepare release:perform -DreleaseVersion=2.0 -Ddevelopmentversion=1.9-SNAPSHOT'
+                sh '/usr/share/maven/bin/mvn --batch-mode release:clean release:prepare release:perform -DreleaseVersion=3.0 -Ddevelopmentversion=3.1-SNAPSHOT'
             }
         }
     }    
