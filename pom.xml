@@ -33,7 +33,7 @@
                  <version>3.0.0-M1</version>
                  <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <pushChanges>false</pushChanges>
+                    <pushChanges>true</pushChanges>
                     <localCheckout>true</localCheckout>
                     <tagNameFormat>@{project.version}</tagNameFormat>
                  </configuration>
