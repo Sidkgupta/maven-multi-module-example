@@ -21,7 +21,7 @@ pipeline{
    
    script{
 
-                def userInput
+          def userInput
 
   try {
 
@@ -62,4 +62,6 @@ pipeline{
                 
     }    
     
+}
+    }
 }
