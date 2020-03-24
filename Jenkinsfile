@@ -46,8 +46,12 @@ pipeline{
 }
  }
 
- }    
+ }  
+        
       stage('release'){
+           when {
+                branch 'release'
+            }
             steps{
                 sh '/usr/share/maven/bin/mvn --batch-mode release:clean release:prepare release:perform -DreleaseVersion=2.0 -Ddevelopmentversion=1.9-SNAPSHOT'
             }
